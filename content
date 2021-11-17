@@ -1,0 +1,12 @@
+Kafka is an open-source event streaming platform for high-throughput publishing and processing of events. There are numerous popular Go libraries for interacting with Kafka.
+Apache Kafka is used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+Kafka enabled the ingest of millions of metric points per hour without sacrificing performance.
+
+The following are some of the benefits of employing systems like Apache Kafka.
+
+1. Increased Reliability
+Queues make your data persistent by allowing other parts of the system to communicate with the queue even if one element of the system is unreachable.
+2. Improved Performance
+Endpoints that are producing and consuming messages interact with the queue, not each other, to enable asynchronous communication.
+3. Scalability
+Message queues enable you to scale precisely where you need to when workloads peak.
