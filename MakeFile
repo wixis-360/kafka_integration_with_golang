@@ -1,0 +1,24 @@
+my kafka file path: c:\kafka
+	// kafka version : kafka_2.13-2.4.1.tgz
+
+step 1:run zookeeper server (open cmd in your kafka file path & run ex1 command in your cmd)
+	ex1: .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+step 2:run kafka server (open cmd in your kafka file path & run ex2 command in your cmd)
+	ex2: .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+step 3: deps-install manually / sync dependencies
+## deps-install: Install packages and dependencies
+deps-install:
+	go mod download
+
+step 4: run-producer (in intellij terminal)
+## run-producer: Run producer
+to run-producer:
+	go run producer/main.go
+
+step 5: run-consumer (in intellij terminal)
+## run-consumer: Run consumer
+to run-consumer:
+	go run consumer/main.go
+	If this work you will receive this://Received messages :  Something Cool//
